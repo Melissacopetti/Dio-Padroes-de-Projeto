@@ -8,6 +8,13 @@
             "type": "java",
             "name": "Test",
             "request": "launch",
+            "mainClass": "one.digitalInovation.gof.Facade.Test",
+            "projectName": "Dio-Padroes-deProjeto_f05f3f98"
+        },
+        {
+            "type": "java",
+            "name": "Test",
+            "request": "launch",
             "mainClass": "one.digitalInovation.gof.Strategy.Test",
             "projectName": "Dio-Padroes-deProjeto_f05f3f98"
         },
