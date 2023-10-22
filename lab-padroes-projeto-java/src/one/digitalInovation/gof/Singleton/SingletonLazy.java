@@ -1,4 +1,4 @@
-package one.digitalInovation.gof;
+package one.digitalInovation.gof.Singleton;
 
 public class SingletonLazy{
 

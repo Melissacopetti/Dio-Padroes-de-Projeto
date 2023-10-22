@@ -1,4 +1,4 @@
-package one.digitalInovation.gof;
+package one.digitalInovation.gof.Singleton;
 // testes relacionados ao Design Patterns Singleton
 public class Test {
     public static void main(String[] args) {
