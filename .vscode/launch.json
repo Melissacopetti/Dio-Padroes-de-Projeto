@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "PadroesDeProjetoSpringApplication",
+            "request": "launch",
+            "mainClass": "dio.padroesSpring.PadroesDeProjetoSpringApplication",
+            "projectName": "padroes-de-projeto-spring"
+        },
+        {
+            "type": "java",
             "name": "Test",
             "request": "launch",
             "mainClass": "one.digitalInovation.gof.Facade.Test",

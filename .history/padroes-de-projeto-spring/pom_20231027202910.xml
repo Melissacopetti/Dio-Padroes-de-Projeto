@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>3.1.5</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+	<groupId>dio</groupId>
+	<artifactId>padroes-de-projeto-spring</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>padroes-de-projeto-spring</name>
+	<description>Demonstração de padrões de projeto em Spring</description>
+	<properties>
+		<java.version>11</java.version>
+		<spring-cloud.version>2022.0.4</spring-cloud.version>
+	</properties>
+	<dependencies>
+		
+			<!-- Spring Data JPA (adicionado via Spring Initializr) -->
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-data-jpa</artifactId>
+			</dependency>
+			<!-- Spring Web (adicionado via Spring Initializr) -->
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-web</artifactId>
+			</dependency>
+			<!-- OpenFeign (adicionado via Spring Initializr) -->
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-starter-openfeign</artifactId>
+			</dependency>
+			<!-- OpenAPI/Swagger (adicionado manualmente) -->
+			<dependency>
+				<groupId>org.springdoc</groupId>
+				<artifactId>springdoc-openapi-ui</artifactId>
+				<version>1.6.4</version>
+			</dependency>
+	
+			<!-- https://mvnrepository.com/artifact/com.h2database/h2 -->
+<dependency>
+    <groupId>com.h2database</groupId>
+    <artifactId>h2</artifactId>
+    <version>2.2.224</version>
+    <scope>test</scope>
+</dependency>
+INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project lab-padroes-projeto-spring: Compilation failure: Compilation failure: 
+[ERROR] /home/melissa/Documentos/GitHub/Dio-Padroes-de-Projeto/padroes-de-projeto-spring/src/main/java/dio/padroesSpring/model/Cliente.java:[3,27] package jakarta.persistence does not exist
+[ERROR] /home/melissa/Documentos/GitHub/Dio-Padroes-de-Projeto/padroes-de-projeto-spring/src/main/java/dio/padroesSpring/model/Cliente.java:[4,27] package jakarta.persistence does not exist
+[ERROR] /home/melissa/Documentos/GitHub/Dio-Padroes-de-Projeto/padroes-de-projeto-spring/src/main/java/dio/padroesSpring/model/Cliente.java:[5,27] package jakarta.persistence does not exist
+[ERROR] /home/melissa/Documentos/GitHub/Dio-Padroes-de-Projeto/padroes-de-projeto-spring/src/main/java/dio/padroesSpring/model/Cliente.java:[6,27] package jakarta.persistence does not exist
+[ERROR] /home/melissa/Documentos/GitHub/Dio-Padroes-de-Projeto/padroes-de-projeto-spring/src/main/java/dio/padroesSpring/model/Cliente.java:[7,27] package jakarta.persistence does not exist
+[ERROR] /home/melissa/Documentos/GitHub/Dio-Padroes-de-Projeto/padroes-de-projeto-spring/src/main/java/dio/padroesSpring/model/Cliente.java:[9,2] cannot find symbol
+[ERROR]   symbol: class Entity
+[ERROR] /home/melissa/Documentos/GitHub/Dio-Padroes-de-Projeto/padroes-de-projeto-spring/src/main/java/dio/padroesSpring/model/Endereco.java:[3,27] package jakarta.persistence does not exist
+[ERROR] /home/melissa/Documentos/GitHub/Dio-Padroes-de-Projeto/padroes-de-projeto-spring/src/main/java/dio/padroesSpring/model/Endereco.java:[4,27] package jakarta.persistence does not exist
+[ERROR] /home/melissa/Documentos/GitHub/Dio-Padroes-de-Projeto/padroes-de-projeto-spring/src/main/java/dio/padroesSpring/model/Endereco.java:[9,2] cannot find symbol
+[ERROR]   symbol: class Entity
+[ERROR] /home/melissa/Documentos/GitHub/Dio-Padroes-de-Projeto/padroes-de-projeto-spring/src/main/java/dio/padroesSpring/model/Cliente.java:[12,10] cannot find symbol
+[ERROR]   symbol:   class Id
+[ERROR]   location: class dio.padroesSpring.model.Cliente
+[ERROR] /home/melissa/Documentos/GitHub/Dio-Padroes-de-Projeto/padroes-de-projeto-spring/src/main/java/dio/padroesSpring/model/Cliente.java:[13,10] cannot find symbol
+[ERROR]   symbol:   class GeneratedValue
+[ERROR]   location: class dio.padroesSpring.model.Cliente
+[ERROR] /home/melissa/Documentos/GitHub/Dio-Padroes-de-Projeto/padroes-de-projeto-spring/src/main/java/dio/padroesSpring/model/Cliente.java:[13,36] cannot find symbol
+[ERROR]   symbol:   variable GenerationType
+[ERROR]   location: class dio.padroesSpring.model.Cliente
+[ERROR] /home/melissa/Documentos/GitHub/Dio-Padroes-de-Projeto/padroes-de-projeto-spring/src/main/java/dio/padroesSpring/model/Cliente.java:[16,10] cannot find symbol
+[ERROR]   symbol:   class ManyToOne
+[ERROR]   location: class dio.padroesSpring.model.Cliente
+[ERROR] /home/melissa/Documentos/GitHub/Dio-Padroes-de-Projeto/padroes-de-projeto-spring/src/main/java/dio/padroesSpring/model/Endereco.java:[12,10] cannot find symbol
+[ERROR]   symbol:   class Id
+[ERROR]   location: class dio.padroesSpring.model.Endereco
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+	
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-test</artifactId>
+				<scope>test</scope>
+			</dependency>
+		</dependencies>
+	
+		<dependencyManagement>
+			<dependencies>
+				<dependency>
+					<groupId>org.springframework.cloud</groupId>
+					<artifactId>spring-cloud-dependencies</artifactId>
+					<version>${spring-cloud.version}</version>
+					<type>pom</type>
+					<scope>import</scope>
+				</dependency>
+			</dependencies>
+		</dependencyManagement>
+	
+		<build>
+			<plugins>
+				<plugin>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-maven-plugin</artifactId>
+				</plugin>
+			</plugins>
+		</build>
+
+</project>
